@@ -3,7 +3,8 @@ class CreateStrolls < ActiveRecord::Migration[5.2]
     create_table :strolls do |t|
       t.belongs_to :dogsitter, index: true
       t.belongs_to :dog, index: true
-
+      t.datetime :date
+      
       t.timestamps
     end
   end
